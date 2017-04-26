@@ -1,0 +1,2 @@
+# Pylint vscode config for errors and disabling errors
+https://donjayamanne.github.io/pythonVSCodeDocs/docs/troubleshooting_linting/
