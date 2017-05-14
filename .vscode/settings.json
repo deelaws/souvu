@@ -6,8 +6,9 @@
     "telemetry.enableCrashReporter": false,
     "python.pythonPath": "D:/dev/virtual_envs/remind-app/scripts/python.exe",
     "terminal.integrated.shell.windows": "D:\\dev\\virtual_envs\\remind-app\\Scripts\\activate",
-    "terminal.integrated.cursorBlinking": true
-
+    "terminal.integrated.cursorBlinking": true,
+    "python.linting.pylintEnabled": false,
+    "zenMode.hideTabs": false
     //"python.pythonPath": "D:/dev/virtual_envs/remind-app/scripts/python.exe"
     //"python.pythonPath": "D:\\dev\\virtual_envs\\remind-app\\Scripts\\python"
     //"pythonPath": "D:dev//virtual_envs//remind-app//Scripts//python"
