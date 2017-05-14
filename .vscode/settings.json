@@ -1,7 +1,14 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "python.venvPath": "~/virt_env/",
-    "python.autoComplete.extraPaths": [],
+    "python.venvPath": "D:\\dev\\virtual_envs",
+    "python.autoComplete.extraPaths": ["D:\\dev\\virtual_envs\\remind-app\\Lib\\site-packages"],
     "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false
+    "telemetry.enableCrashReporter": false,
+    "python.pythonPath": "D:/dev/virtual_envs/remind-app/scripts/python.exe",
+    "terminal.integrated.shell.windows": "D:\\dev\\virtual_envs\\remind-app\\Scripts\\activate",
+    "terminal.integrated.cursorBlinking": true
+
+    //"python.pythonPath": "D:/dev/virtual_envs/remind-app/scripts/python.exe"
+    //"python.pythonPath": "D:\\dev\\virtual_envs\\remind-app\\Scripts\\python"
+    //"pythonPath": "D:dev//virtual_envs//remind-app//Scripts//python"
 }
