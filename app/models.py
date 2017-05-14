@@ -1,6 +1,6 @@
 
 from flask_sqlalchemy import SQLAlchemy
-from . import db
+from app.app import db
 
 # Define a base model for other database tables to inherit
 

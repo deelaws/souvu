@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
-from souvu.app import db
-from souvu.models import Base
 
+from app.app import db
+from app.models import Base
 
 class Memory(Base):
     __tablename__ = 'memory'
