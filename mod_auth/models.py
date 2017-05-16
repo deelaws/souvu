@@ -18,7 +18,7 @@ class User(Base):
     '''
     Encrypted password for the user.    
     '''
-    password = db.Column(db.String, nullable=False)
+    password_hash = db.Column(db.String(128))
 
     authenticated = db.Column(db.Boolean, default=False)
 
@@ -28,21 +28,6 @@ class User(Base):
     last_name = db.Column(db.String(25),  nullable=True)
 
     test_account = db.Column(db.Boolean, default=False)
-
-    # One to many relationship with RescueAlert
-    #rescue_alerts = db.relationship('RescueAlert', backref="user", cascade="all, delete-orphan", lazy='dynamic')
-
-    def __init__(self, username, password):
-        """Constructor"""
-        self.email = username
-        self.set_password(password)
-
-    def set_password(self, password):
-        """Set's the password for the user.
-           It generates a hash of the password using werkzeug
-        """
-        print("password is", password)
-        self.password = generate_password_hash(password)
 
     def check_password(self, password):
         """ Check's whether the specified password is correct """
@@ -67,3 +52,11 @@ class User(Base):
     def get_id(self):
         """Return the email address to satisfy Flask-Login's requirements."""
         return self.email
+
+    @property
+    def password(self):
+        raise AttributeError('password is not a readable attribute')
+
+    @password.setter
+    def password(self, password):
+        self.password_hash = generate_password_hash(password)

@@ -9,11 +9,11 @@ from random import randint
 def create_reminders():
     pass
 
-app = create_app()
+app = create_app('development')
 
 users_to_add = [('deelaws@hotmail.com', 'qwqwqwqwqw'),
-                ('besttimothy1@gmail.com', 'qwqwqwqwqw'),
-                ('jordanb@hotmail.com', 'qwqwqwqwqw'),
+                ('billg@gmail.com', 'qwqwqwqwqw'),
+                ('jordanbelfort@hotmail.com', 'qwqwqwqwqw'),
                 ('deelaws89@gmail.com', 'qwqwqwqwqw')]
 
 def create_sample_users():
