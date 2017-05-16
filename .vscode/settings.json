@@ -8,7 +8,18 @@
     "terminal.integrated.shell.windows": "D:\\dev\\virtual_envs\\remind-app\\Scripts\\activate",
     "terminal.integrated.cursorBlinking": true,
     "python.linting.pylintEnabled": false,
-    "zenMode.hideTabs": false
+    "zenMode.hideTabs": false,
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        ".\\tests",
+        "-p",
+        "*_test.py"
+    ],
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.promptToConfigure": false
     //"python.pythonPath": "D:/dev/virtual_envs/remind-app/scripts/python.exe"
     //"python.pythonPath": "D:\\dev\\virtual_envs\\remind-app\\Scripts\\python"
     //"pythonPath": "D:dev//virtual_envs//remind-app//Scripts//python"
