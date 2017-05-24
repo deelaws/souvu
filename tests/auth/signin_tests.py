@@ -41,7 +41,7 @@ class AuthenticationTests(unittest.TestCase):
 
     def test_signup_user(self):
         print("Running Test: ", self._testMethodName)
-        user_to_add = 'jason@example.com'
+        user_to_add = 'walter@example.com'
         response = self.client.post(url_for('auth.signup'), data=dict(
             user_name=user_to_add,
             password='qwqwqwqwqw'
@@ -53,3 +53,13 @@ class AuthenticationTests(unittest.TestCase):
         print("testyyyy 22222222222")
         self.assertEqual(user.is_authenticated(), False)
 
+    def test_user_login(self):
+        print("Running Test: ", self._testMethodName)
+
+        user_to_add = 'walter@example.com'
+        response = self.client.post(url_for('auth.signup'), data=dict(
+            user_name=user_to_add,
+            password='qwqwqwqwqw'
+        ), follow_redirects=True)
+
+        print("Signed up user")

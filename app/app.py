@@ -28,6 +28,9 @@ def create_app(config_name):
     from mod_auth.views import mod_auth
     app.register_blueprint(mod_auth)
 
+    from app.views import mod_app 
+    app.register_blueprint(mod_app)
+
     @app.route("/")
     def hello():
         return "Hello World"
