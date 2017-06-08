@@ -68,3 +68,8 @@ def signup():
             # TODO: send email to the user for registration signup
             return redirect(url_for('hello'))
     return render_template('auth/signup.html', form=form)
+
+@mod_auth.route('/mems', methods=['GET', 'POST'])
+def hello():
+    print("Hello there I am here")
+    return "Fooo Bar"
