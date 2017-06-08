@@ -35,10 +35,10 @@ class Memory(Base, DictSerializable):
 
     def to_json():
         memory_json = {
-            'mem_name' = self.mem_name,
-            'mem_url' = url_for('memory.get_memory', id=self.id, _external=True),
-            'mem_info' = self.mem_info,
-            'mem_type' = self.mem_type,
+            'mem_name': self.mem_name,
+            'mem_url': url_for('memory.get_memory', id=self.id, _external=True),
+            'mem_info': self.mem_info,
+            'mem_type': self.mem_type,
         }
 
         return memory_json
