@@ -33,7 +33,7 @@ class Memory(Base, DictSerializable):
         self.mem_info = info
         self.mem_type = mtype
 
-    def to_json():
+    def to_json(self):
         memory_json = {
             'mem_name': self.mem_name,
             'mem_url': url_for('memory.get_memory', id=self.id, _external=True),
@@ -56,7 +56,7 @@ class Memory(Base, DictSerializable):
 
         mtype = MemoryTypes.get_type_from_string(mtype)
         if mtype is None or mtype == '':
-            raise ValidationError('Memory does not have a type')    
+            raise ValidationError('Memory does not have a type')
 
-        return Memory(mem_name=mname)
+        return Memory(mname, minfo, mtype)
 
