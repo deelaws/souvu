@@ -6,13 +6,15 @@ from flask import url_for
 from mod_auth.models import User
 from mod_memory.models import Memory
 from mod_memory.memory_types import MemoryTypes
+
+
 """
 Authentication Tests
 
 Run command:
 python -m unittest tests\auth\signin_tests.py
 """
-class AuthenticationTests(unittest.TestCase):
+class SigninTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
