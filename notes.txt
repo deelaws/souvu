@@ -1,2 +1,5 @@
 # Pylint vscode config for errors and disabling errors
 https://donjayamanne.github.io/pythonVSCodeDocs/docs/troubleshooting_linting/
+
+# psycopg: Python.h: No such file or directory
+sudo apt-get install python3-dev
